@@ -4,11 +4,11 @@ import {HashtagList} from "./HashtagList.tsx";
 
 const App = () => {
   return (
-    <>
+    <div className='app'>
       <Footer />
       <Container />
       <HashtagList />
-    </>
+    </div>
   )
 }
 

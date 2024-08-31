@@ -1,7 +1,11 @@
+import {Header} from "./Header.tsx";
+import {FeedbackList} from "./FeedbackList.tsx";
+
 export const Container = () => {
     return (
-        <>
-            testing
-        </>
+        <main className='container'>
+            <Header />
+            <FeedbackList />
+        </main>
     )
 }

@@ -1,13 +1,17 @@
-import {Footer} from "./Footer.tsx";
-import {Container} from "./Container.tsx";
 import {HashtagList} from "./HashtagList.tsx";
+import {Footer} from "./layout/Footer.tsx";
+import {Container} from "./layout/Container.tsx";
+import {FeedBackItemsContext} from "../context/feedBackItemsContext.tsx";
 
 const App = () => {
+
   return (
     <div className='app'>
       <Footer />
-      <Container />
-      <HashtagList />
+      <FeedBackItemsContext>
+        <Container/>
+        <HashtagList/>
+      </FeedBackItemsContext>
     </div>
   )
 }
